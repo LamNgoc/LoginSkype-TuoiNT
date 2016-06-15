@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" class="noTabletState ltr skype-white simple-haf  svg"><head><meta charset="utf-8" /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>Sign into your Skype account</title><meta content="Sign into your Skype account to call and chat with friends and family. Log in to stay in touch with Skype." name="description" /><meta name="viewport" content="width=device-width, initial-scale=1" /><!-- IE10 snap mode fix - should be included before all linked resources to work properly --><style type="text/css">@-webkit-viewport{width:device-width;} @-moz-viewport{width:device-width;} @-ms-viewport{width:device-width;} @-o-viewport{width:device-width;} @viewport{width:device-width;}</style><!-- Fix for IE10 viewport on mobile --><script type="text/javascript">/*&lt;![CDATA[*/    (function() {
+        if ("-ms-user-select" in document.documentElement.style &amp;&amp; navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(
+                document.createTextNode("@-ms-viewport{width:auto!important}")
+            );
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    })(); 
+    /*]]&gt;*/</script><!-- end IE10 snap mode fix --><link href="https://apps.skypeassets.com/static/1.206/skype.login/images/icons/favicon.ico" type="image/vnd.microsoft.icon" rel="icon" /><link href="https://apps.skypeassets.com/static/1.206/skype.login/images/icons/favicon.ico" rel="shortcut icon" /><link href="https://apps.skypeassets.com/static/1.206/skype.login/images/logos/skype_webclip.png" rel="apple-touch-icon" /><link href="https://apps.skypeassets.com/static/1.206/skype.login/css/reset.css;fonts.css;responsiveness.css;buttons.css;haf.css" media="screen" type="text/css" rel="stylesheet" /><link href="https://apps.skypeassets.com/static/1.206/skype.login/css/base.css;layout.css;form.css;notification.css;input.css;checkbox.css" media="screen" type="text/css" rel="stylesheet" /><script src="https://apps.skypeassets.com/static/1.206/skype.login/js/jquery.js;skype.js;language.js"></script><script src="https://apps.skypeassets.com/static/1.206/skype.login/js/svgsupport.js;hotfix.js;button.js;input.js;checkbox.js;common.js"></script><link href="https://apps.skypeassets.com/static/1.206/skype.login/css/email-message.css;spinner.css;captcha.css;microsoft-sso.css" media="screen" type="text/css" rel="stylesheet" /></head><body><div class="pageWrap"><div class="skypeLogo"><span class="skypeLogoImage"></span></div><header class="pageTitle"><div class="subContent"><h1>Sign in with Skype or Microsoft account</h1></div></header><div role="main" id="container" class="fancyContainer"><div class="contentBlock"><div class="loginContainer"><div class="cell"><div tabindex="0" role="alert" aria-live="polite" aria-atomic="true" class="messageBox message_error"><div class="messageIcon">Error</div><span>Signing in failed. Please double-check your Skype Name and re-enter your password.</span></div><div tabindex="0" role="alert" aria-live="polite" aria-atomic="true" id="unrecognizedCredentialError" style="display: none;" class="messageBox message_error"><div class="messageIcon">Error</div><span>Your sign in details were not recognized, please check and try again.</span></div><noscript>&lt;div class="message messageBox message_warning"&gt;&lt;div class="messageIcon"&gt;Warning&lt;/div&gt;This page requires JavaScript to be turned on. Please update your browser settings.&lt;/div&gt;</noscript><div class="inputContainer"><form action="https://login.skype.com/login" method="post" autocomplete="off" id="loginForm"><div class="fieldRow inputField"><label for="username">Skype name, email or phone number</label> <input type="text" value="lamngoc" maxlength="150" id="username" name="username" /><span class="icon"></span></div><div class="fieldRow inputField hideOnMsa"><label for="password">Password</label> <input type="password" value="" maxlength="256" autocomplete="off" id="password" name="password" /><span class="icon"></span></div><div class="fieldRow checkbox hideOnMsa"><label for="persistent"><input type="checkbox" value="1" autocomplete="off" id="persistent" name="persistent" /> <span class="icon"></span><span class="text">Keep me signed in</span></label></div><div class="fieldRow hideOnMsa"><button id="signIn" type="submit" class="btn primaryCta"> <span class="arrowNext"><span class="icon"></span><span>Sign in</span></span></button></div><div id="spinnerContainer" style="display:none"><div id="spinner" class="spinner transparentBackground"><div aria-hidden="true" class="spinnerPosition"><div aria-hidden="true" class="spinnerMask"><div aria-hidden="true" class="spinnerSprite"></div></div></div></div></div><div class="fieldRow noPadding"><a href="https://login.skype.com/join" id="createNewAccount">Create new account</a></div><input type="hidden" id="timezone_field" name="timezone_field" value="+07|00" /> <input type="hidden" value="FeM9q8l8mDqvdNLuauarpdn28YkmE3zXF4Olnm4Q5Ggmk+2nnX7iB5KtQigw5S7olSSW61EGgmxIvq3+Xr+YeTU4NGVmNjQxMDQ4YjFhY2FmNTNkOGRkNDAxOWE0ZmEw" id="pie" name="pie" /> <input type="hidden" value="u8CMmKqoWv3d3GWjLfDPPoXnkd8Ome2EctkHmsGD8yNkJVi1cgrw4Fg4g5Q6jxw7uqiKITG/XUXMLXvYbPoFtTJhZGM4ZDc2Mzg5ZTdiMTI0M2E5MjFhZjUzNDUzMDE1" id="etm" name="etm" /> <input type="hidden" id="js_time" name="js_time" /><script type="text/javascript">/*&lt;![CDATA[*/    function getCurrentTime() {
+        return (new Date().getTime()) / 1000;
+    }
+    
+    function getTimezone() {
+        var pad = function(n, c) {
+            if ((n = n + "").length &lt; c) {
+                return new Array(++c - n.length).join("0") + n;
+            } else {
+                return n;
+            }
+        };
+        var sign;
+        var timezone = new Date().getTimezoneOffset() * (-1);
+        if (timezone &gt;= 0) {
+            sign = "+";
+        } else {
+            sign = "-";
+        }
+
+        timezone = Math.abs(timezone);
+        var minutes = timezone % 60;
+        var hours = (timezone - minutes) / 60;
+        minutes = pad(minutes, 2);
+        hours = pad(hours, 2);
+        
+        return sign + hours + "|" + minutes;
+    }
+    
+    $(function () {
+        $("#js_time").closest("form").submit(function () {
+            $("#js_time").val(getCurrentTime());
+            return true;
+        });
+    
+        $("#timezone_field").val(getTimezone());
+    });
+    /*]]&gt;*/</script></form></div></div><div class="cell createNewAccount double"><div class="fieldRow"><a href="https://login.skype.com/recovery" id="forgottenPassword">Problems signing in?</a><span id="unifiedFacebook" class="noMobile"><a href="https://login.skype.com/login/oauth/facebook" class="loginChoice fbIcon"><span class="icon"></span>Sign in with Facebook</a></span></div></div></div></div></div><div id="cloudWrap" class="noMobile"><div id="cloudBase"><div class="cloudBackground smallCloud"></div><div class="cloudBackground largeCloud"></div></div></div><footer class="footer"><div class="footer_app"><form action="https://login.skype.com/login" method="get" class="language-selector"><span id="selectedLanguage" class="language-selector_selected">English</span><div><select aria-label="Language" title="Language" id="languageSelector" name="setlang" class="language-selector_picker"><option lang="en" selected="selected" label="English" value="en">English</option><option lang="ar" label="????" value="ar">????</option><option lang="bg" label="?????????" value="bg">?????????</option><option lang="cs" label="?esky" value="cs">?esky</option><option lang="da" label="Dansk" value="da">Dansk</option><option lang="de" label="Deutsch" value="de">Deutsch</option><option lang="el" label="????????" value="el">????????</option><option lang="es" label="Español" value="es">Español</option><option lang="et" label="Eesti" value="et">Eesti</option><option lang="fi" label="Suomi" value="fi">Suomi</option><option lang="fr" label="Français" value="fr">Français</option><option lang="he" label="?????" value="he">?????</option><option lang="hi" label="??????" value="hi">??????</option><option lang="hu" label="Magyar" value="hu">Magyar</option><option lang="id" label="Bahasa Indonesia" value="id">Bahasa Indonesia</option><option lang="it" label="Italiano" value="it">Italiano</option><option lang="ja" label="???" value="ja">???</option><option lang="ko" label="???" value="ko">???</option><option lang="nl" label="Nederlands" value="nl">Nederlands</option><option lang="no" label="Norsk" value="no">Norsk</option><option lang="pl" label="Polski" value="pl">Polski</option><option lang="pt" label="Português" value="pt">Português</option><option lang="pt-br" label="Português (Brasileiro)" value="pt-br">Português (Brasileiro)</option><option lang="ro" label="Român?" value="ro">Român?</option><option lang="ru" label="???????" value="ru">???????</option><option lang="sv" label="Svenska" value="sv">Svenska</option><option lang="tr" label="Türkçe" value="tr">Türkçe</option><option lang="uk" label="??????????" value="uk">??????????</option><option lang="zh-Hans" label="?????)" value="zh-Hans">?????)</option><option lang="zh-Hant" label="?? (??)" value="zh-Hant">?? (??)</option></select></div></form></div><div class="footer_legal"><a href="https://go.skype.com/tou" target="_blank" class="footer_link">Terms of use</a><div class="footer_separator">·</div><a href="https://go.skype.com/privacy" class="footer_link">Privacy and cookie policy</a><div class="footer_separator">·</div><span id="copyright">© 2016 Skype and/or Microsoft.</span></div></footer><script src="https://apps.skypeassets.com/static/1.206/skype.login/js/spinner.js;tools.js;unified.js"></script><script type="text/javascript">            $(function () {
+                var microsoftLoginPageUrl = "https:\/\/login.skype.com\/login\/oauth\/microsoft";
+                var suggestionsPageUrl = "https:\/\/login.skype.com\/login\/suggestions";
+                var ifExistsVersion = "2.0";
+                SKYPE.login.Unified.setup(microsoftLoginPageUrl, suggestionsPageUrl, ifExistsVersion);
+            });
+        </script><script type="text/javascript">var varSegmentation = 0;
+var varClickTracking = 0;
+var varCustomerTracking = 1;
+var varAutoFirePV = 0;
+var Route = "16160";
+var Ctrl = null;
+var _wedcs_vars = {};
+/*&lt;![CDATA[*/
+document.write("&lt;script type='text/javascript' src='" + (window.location.protocol) + "//i.s-microsoft.com/wedcs/ms.js'" + "&gt;&lt;\/script&gt;");
+/*]]&gt;*/
+function _wedcs_customevent(trackingProps) {
+    if (typeof window.MscomCustomEvent !== 'function') {
+        return;
+    }
+
+    if (typeof trackingProps === "string") {
+        if (!_wedcs_vars.hasOwnProperty(trackingProps)) {
+            return;
+        }
+        trackingProps = _wedcs_vars[trackingProps];
+    }
+
+    if (!trackingProps.hasOwnProperty('ms.rwd')) {
+        /*&lt;![CDATA[*/
+        var responsive = 'desktop';
+        if (typeof(Portal) !== 'undefined' &amp;&amp; typeof(Portal.Detection) !== 'undefined') {
+            responsive = Portal.Detection.getDeviceType();
+        }
+        /*]]&gt;*/
+        trackingProps['ms.rwd'] = responsive;
+    }
+
+    var args = [];
+    for (var prop in trackingProps) {
+        if (trackingProps.hasOwnProperty(prop)) {
+            args.push(prop);
+            args.push(trackingProps[prop]);
+        }
+    }
+    MscomCustomEvent.apply(window, args);
+}
+function _wedcs_add_action(name, event) {
+    if (event.providerId === 'composite') {
+        for (var item in event.items) {
+            _wedcs_add_action(name, event.items[item]);
+        }
+    } else if (event.providerId === 'wedcs') {
+        _wedcs_vars[name] = event.params;
+    }
+}
+</script><script src="https://i.s-microsoft.com/wedcs/ms.js" type="text/javascript"></script><iframe style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;" src="https://c1.microsoft.com/c.gif?DI=4050&amp;did=1&amp;t=" id="_msnFrame"></iframe><noscript>&lt;img src="http://c.microsoft.com/trans_pixel.aspx" width="1" height="1" alt=""/&gt;</noscript> <script type="text/javascript">_wedcs_vars['_load'] = {"ms.env" : "prod", "ms.skypepn" : "skypeloginweb/login", "ms.pagetype" : "skypeloginweb", "ms.lang" : "en", "ms.prod" : "Skype", "wcs.cot" : "0"};</script><script type="text/javascript">_wedcs_customevent('_load');</script><script type="text/javascript">/*&lt;![CDATA[*/function _skype_track_action(actionId) {
+    if (typeof s !== 'undefined' &amp;&amp; typeof window[actionId] !== 'undefined') {
+        s.trackAction(window[actionId]);
+    }
+    if (typeof _wedcs_customevent !== 'undefined') {
+        _wedcs_customevent(actionId);
+    }
+}
+function _skype_add_action(name, event) {
+    if (typeof _omniture_add_action != 'undefined') {
+        _omniture_add_action(name, event);
+    }
+    if (typeof _wedcs_add_action != 'undefined') {
+        _wedcs_add_action(name, event);
+    }
+}
+/*]]&gt;*/</script></div></body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="993" height="783"></canvas></html>

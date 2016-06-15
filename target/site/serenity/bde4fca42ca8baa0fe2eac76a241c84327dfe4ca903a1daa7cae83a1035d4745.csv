@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login Skype page","Login with Skype name and password are empty","PENDING","2016-06-15T01:47:19.421+07:00","0.0","5.88"
+"Login Skype page","Login with invalid Skype name","PENDING","2016-06-15T01:46:39.897+07:00","0.0","21.7"
+"Login Skype page","Login with invalid Skype name and password","PENDING","2016-06-15T01:47:10.826+07:00","0.0","8.44"
+"Login Skype page","Login with invalid password","PENDING","2016-06-15T01:47:02.513+07:00","0.0","8.13"

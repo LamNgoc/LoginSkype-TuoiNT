@@ -1,0 +1,41 @@
+<acceptance-test-run title="Login with invalid Skype name" name="Login with invalid Skype name" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="23276" timestamp="2016-06-15T13:41:47.816+07:00" session-id="c7d434ef-e438-41f7-ad34-315826fa5bb4">
+  <user-story id="login-skype-page" name="Login Skype page" path="Login_skype.feature"/>
+  <tags>
+    <tag name="Login Skype page" type="feature"/>
+  </tags>
+  <test-group name="Given Go to the login Skype page successfully" result="SUCCESS">
+    <screenshots>
+      <screenshot image="272ddcf78ea2b07565dd8ba874744931.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="17964">
+      <screenshots>
+        <screenshot image="272ddcf78ea2b07565dd8ba874744931.png"/>
+      </screenshots>
+      <description>Open  skype login</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="1033">
+    <screenshots>
+      <screenshot image="3de544c868f6fd402422ebb7793edc18.png"/>
+    </screenshots>
+    <description>When Input a skype name &quot;Lamngoc&quot;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="819">
+    <screenshots>
+      <screenshot image="5c798f1130e7819b64148bffaffa2258.png"/>
+    </screenshots>
+    <description>And Input a password &quot;1234567890&quot;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2404">
+    <screenshots>
+      <screenshot image="8e097353c8dfe833f552fe4e0746a971.png"/>
+    </screenshots>
+    <description>And Click Sign in button</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="436">
+    <screenshots>
+      <screenshot image="8e097353c8dfe833f552fe4e0746a971.png"/>
+    </screenshots>
+    <description>Then Show an error message &quot;Signing in failed. Please double-check your Skype Name and re-enter your password.&quot;</description>
+  </test-step>
+</acceptance-test-run>

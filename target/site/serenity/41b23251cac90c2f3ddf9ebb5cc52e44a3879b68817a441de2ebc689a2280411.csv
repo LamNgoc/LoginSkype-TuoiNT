@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login Skype page","Login with Skype name and password are empty","SUCCESS","2016-06-15T13:42:30.307+07:00","0.0","6.6"
+"Login Skype page","Login with invalid Skype name","SUCCESS","2016-06-15T13:41:47.816+07:00","0.0","23.28"
+"Login Skype page","Login with invalid Skype name and password","SUCCESS","2016-06-15T13:42:21.113+07:00","0.0","9.03"
+"Login Skype page","Login with invalid password","SUCCESS","2016-06-15T13:42:12.553+07:00","0.0","8.38"
